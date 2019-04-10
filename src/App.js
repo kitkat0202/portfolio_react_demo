@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Projects from './pages/Projects/Projects';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Fragment>
+                <Navbar />
+                <div className="outer-container">
+                    <div className="container">
+                        <Router>
+                            <Switch>
+                                <Route exact path="/" render={() => <Projects link="projects" /> } />
+                                <Route path="/Projects" render={() => <Projects link="projects" /> } />
+                                <Route path="/About" render={() => <About link="about" /> } />
+                                <Route path="/Contact" render={() => <Contact link="contact" /> } />
+                                <Route render={() => <Projects link="projects" /> } />
+                            </Switch>
+                        </Router>
+                    </div>
+                </div>
+                <Footer />
+            </Fragment>
+        );
+    }
 }
 
 export default App;

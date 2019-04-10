@@ -1,0 +1,26 @@
+.about-container {
+    background-color: var(--white-blue);
+    margin: 70px 0px 0px 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 10px 1px #1f1f1f91;
+}
+
+.marg-sides {
+    margin: 10px 25px;
+}
+
+ul.sub-list li {
+    list-style-type: square;
+    margin-bottom: 8px;
+}
+
+
+/* ////////////////////////////////////// */
+/* //////////// Media Queries /////////// */
+/* ////////////////////////////////////// */
+@media (max-width: 767px) {
+    .about-container {
+        margin: 280px 0px 0px 0px;
+    }
+}

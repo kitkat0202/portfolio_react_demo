@@ -1,0 +1,122 @@
+.project-card {
+    position: relative;
+    margin: 10px auto;
+}
+
+.project-card:hover {
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+
+/* /////////// */
+/* Flip Affect */
+/* /////////// */
+.card-box {
+    position: relative;
+    height: 280px;
+}
+
+.front-card,
+.back-card {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: var(--trans);
+}
+
+.front-card {
+    transform: perspective(1000px) rotateY( 0deg);
+}
+  
+.back-card {
+    transform: perspective(1000px) rotateY( 180deg);
+}
+
+.card-box:hover .front-card {
+    transform: perspective(1000px) rotateY( -180deg);
+}
+
+.card-box:hover .back-card {
+    transform: perspective(1000px) rotateY( 0deg);
+}
+
+
+/* //////////////////////////////// */
+/* Dark background and line borders */
+/* //////////////////////////////// */
+.card-text {
+    background-color: #161a20e7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-text::before, .card-text::after {
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+}
+
+.card-text::before {
+    border-top: 2px solid #ffffffa8;
+    border-bottom: 2px solid #ffffffa8;
+    transform: scale(1.04, 1);
+}
+.card-text::after {
+    border-left: 2px solid #ffffffa8;
+    border-right: 2px solid #ffffffa8;
+    transform: scale(1, 1.05);
+}
+
+
+/* //////////// */
+/* text centred */
+/* //////////// */
+.card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: .5px;
+    border-top: 2px solid #ffffff00;
+}
+
+
+/* ////////////////////////////////////// */
+/* //////////// Media Queries /////////// */
+/* ////////////////////////////////////// */
+@media (max-width: 768px) {
+    .card-box {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-box {
+        position: relative;
+        height: 360px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-box {
+        position: relative;
+        height: 320px;
+    }
+}
+
+@media (max-width: 380px) {
+    .card-box {
+        position: relative;
+        height: 270px;
+    }
+}

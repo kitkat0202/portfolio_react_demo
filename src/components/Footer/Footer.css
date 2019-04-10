@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    height: 80px;
+    /* margin-top: -80px; */
+    padding: 10px;
+    background-color: #343a40e7;
+    letter-spacing: .5px;
+}
+
+.footer .small-text {
+    margin-bottom: 0;
+}
+
+.footer-link {
+    color: rgba(255,255,255,.5)
+}
+
+.footer-link:hover {
+    color: var(--mid-blue);
+    text-decoration: none;
+}
+
+.footer-link:active,
+.footer-link:visited {
+    color: var(--light-text);
+}

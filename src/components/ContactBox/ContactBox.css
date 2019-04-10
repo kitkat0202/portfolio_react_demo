@@ -1,0 +1,55 @@
+.contact-box {
+    margin: 50px 80px;
+    padding: 30px 60px;
+    color: #dce5ecab;
+    border: 5px dashed #dce5ecab;
+}
+
+.contact-box h3 {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #dce5ecab;
+    letter-spacing: 1.2px;
+}
+
+.contact-box:hover {
+    color: var(--white-blue);
+    text-shadow: var(--tshadow);
+    border: 5px dashed var(--white-blue);
+}
+
+.contact-box:hover h3 {
+    border-bottom: 2px solid var(--white-blue);
+}
+
+/* ////////////////////////////////////// */
+/* //////////// Media Queries /////////// */
+/* ////////////////////////////////////// */
+@media (max-width: 992px) {
+    .contact-box {
+        margin: 50px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        color: var(--white-blue);
+        border: 5px dashed var(--white-blue);
+    }
+    
+    .contact-box h3 {
+        border-bottom: 2px solid var(--white-blue);
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-box {
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-box {
+        margin: 50px -10px;
+        padding: 30px 10px;
+    }
+}
