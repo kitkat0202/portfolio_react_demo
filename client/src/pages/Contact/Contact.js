@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContactBox from '../../components/ContactBox'
+import API from '../../utils/API'
 import './Contact.css';
 
 export default class Contact extends Component {
@@ -17,11 +18,10 @@ export default class Contact extends Component {
         const { sendContact, sendMessage, sendName } = this.state
         event.preventDefault()
         console.log( `${sendContact}, ${sendMessage}, ${sendName}`);
+        API.saveMessage(this.state)
     }
 
     render() {
-        const { sendContact, sendMessage, sendName } = this.state
-
         return (
         <React.Fragment>
             <ContactBox title="Telephone">
@@ -36,36 +36,30 @@ export default class Contact extends Component {
             <h5 className="text-center">(Coming Soon)</h5>
                 <form className="contact-form">
                     <input
-                        value={sendName}
                         name="sendName"
                         onChange={this.handleInputChange}
                         type="text"
                         placeholder="Name"
                         autoComplete="off"
-                        disabled
                     />
 
                     <input
-                        value={sendContact}
                         name="sendContact"
                         onChange={this.handleInputChange}
                         type="text"
                         placeholder="Contact"
                         autoComplete="off"
-                        disabled
                     />
 
                     <textarea
-                        value={sendMessage}
                         name="sendMessage"
                         onChange={this.handleInputChange}
                         type="text"
                         placeholder="Message..."
                         autoComplete="off"
                         className="scrollbar scrollbar-message"
-                        disabled
                     />
-                    <button onClick={this.handleFormSubmit} disabled>Submit</button>
+                    <button onClick={this.handleFormSubmit}>Submit</button>
                 </form>
             </ContactBox>
         </React.Fragment>

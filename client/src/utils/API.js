@@ -8,6 +8,6 @@ export default {
         return axios.delete("/api/message/" + id);
     },
     saveMessage: function(data) {
-        return axios.post("/api/message", data);
+        return axios.post("/api/saved", data);
     }
 };
