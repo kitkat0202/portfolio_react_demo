@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Anime Word Guess",
+        "note": "",
+        "link": "https://kitkat0202.github.io/Word-Guess-Game/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/welcome-page.png",
+        "type": "Guessing Game",
+        "date": "Jun 28, 2018",
+        "description": "Anime"
+    },
+    {
+        "name": "Pokemon Gamegirl Color",
+        "note": "",
+        "link": "https://kitkat0202.github.io/unit-4-game/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery", "AJAX"],
+        "img_path": "images/unit-4-game.png",
+        "type": "CSS Fun",
+        "date": "Jul 7, 2018",
+        "description": "Pokemon Gamegirl Color"
+    },
+    {
+        "name": "Kingdom Hearts Crystals",
+        "note": "",
+        "link": "https://kitkat0202.github.io/crystal-game/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/KH-Crystal-Game.png",
+        "type": "Math Game",
+        "date": "Jul 5, 2018",
+        "description": "Kingdom Hearts Crystals"
+    },
+    {
+        "name": "Diablo Trivia Game",
+        "note": "",
+        "link": "https://kitkat0202.github.io/TriviaGame/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/Diablo-Trivia-Game.png",
+        "type": "Guessing Game",
+        "date": "Jul 14, 2018",
+        "description": "Diablo Trivia Game"
+    },
+    {
+        "name": "Multiplayer Rock Paper Scissors",
+        "note": "",
+        "link": "https://kitkat0202.github.io/RPS-Multiplayer/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery", "firebase"],
+        "img_path": "images/RPS-game.png",
+        "type": "Multiplayer Rock Paper Scissors",
+        "date": "Aug 4, 2018",
+        "description": "Multiplayer Rock Paper Scissors"
+    },
+    {
+        "name": "Fly-in-Soup",
+        "note": "(collaborative work)",
+        "link": "https://evansimonross.github.io/Fly-in-Soup/",
+        "tech": ["HTML", "CSS", "Javascript", "JQuery", "AJAX"],
+        "img_path": "images/Fly_in_soup.png",
+        "type": "Resturant Sanitary Rating",
+        "date": "Aug 11, 2018",
+        "description": "Fly-in-Soup"
+    },
+    {
+        "name": "LIRI Bot",
+        "note": "(terminal needed)",
+        "link": "https://github.com/kitkat0202/liri-node-app",
+        "tech": ["Javascript", "AJAX", "node"],
+        "img_path": "images/LIRI_Bot.png",
+        "type": "Search App",
+        "date": "Aug 19, 2018",
+        "description": "LIRI Bot"
+    },
+    {
+        "name": "Eat Da Burger Game",
+        "note": "",
+        "link": "https://shielded-stream-23766.herokuapp.com/",
+        "tech": ["HTML", "CSS", "Javascript", "node", "SQL"],
+        "img_path": "images/burger.png",
+        "type": "CSS Fun",
+        "date": "Sep 20, 2018",
+        "description": "Eat Da Burger Game"
+    },
+    {
+        "name": "Courier",
+        "note": "(collaborative work)",
+        "link": "https://courier-heroku-app.herokuapp.com/",
+        "tech": ["HTML", "CSS", "Javascript", "node", "SQL"],
+        "img_path": "images/courior.png",
+        "type": "Mass Email",
+        "date": "Oct 6, 2018",
+        "description": "Courier"
+    },
+    {
+        "name": "New York Times Teck News Scraper",
+        "note": "",
+        "link": "https://aqueous-anchorage-13239.herokuapp.com/",
+        "tech": ["HTML", "CSS", "Javascript", "AJAX", "node", "MongoDB"],
+        "img_path": "images/news_scraper.png",
+        "type": "Tech News Scraper",
+        "date": "Oct 18, 2018",
+        "description": "New York Times Teck News Scraper"
+    },
+    {
+        "name": "Kingdom Hearts Click",
+        "note": "",
+        "link": "https://kitkat0202.github.io/clicky/",
+        "tech": ["HTML", "CSS", "Javascript", "node", "React"],
+        "img_path": "images/KH_memory.png",
+        "type": "Memory Game",
+        "date": "Oct 27, 2018",
+        "description": "Kingdom Hearts Click"
+    },
+    {
+        "name": "Code Penguin",
+        "note": "(collaborative work)",
+        "link": "https://code-penguin.herokuapp.com/",
+        "tech": ["HTML", "CSS", "Javascript", "node", "React", "Holochain"],
+        "img_path": "images/code_penguin.png",
+        "type": "Code Question Community",
+        "date": "Dec 1, 2018",
+        "description": "Code Penguin"
+    }
+]
