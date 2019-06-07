@@ -9,6 +9,11 @@ export default class Contact extends Component {
         sendContact: "",
         sendMessage: ""
     }
+
+    componentDidMount() {
+        API.getMessage().then(res => console.log(res))
+    }
+
     handleInputChange = event => {
         const { name, value } = event.target
         this.setState({ [name]: value })
@@ -18,7 +23,8 @@ export default class Contact extends Component {
         const { sendContact, sendMessage, sendName } = this.state
         event.preventDefault()
         console.log( `${sendContact}, ${sendMessage}, ${sendName}`);
-        API.saveMessage(this.state)
+        API.saveMessage(this.state). then(res => console.log(res))
+        // this.setState({ sendContact: "", sendName: "", sendMessage: "" })
     }
 
     render() {

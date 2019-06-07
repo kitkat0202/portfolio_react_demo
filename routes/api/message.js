@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const messageController = require('../../controllers/messageController');
 
-// Matches with "/api/saved"
+// Matches with "/api/message"
 router
   .route('/')
   .get(messageController.findAll)

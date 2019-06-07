@@ -9,12 +9,12 @@
   --bgc:#4f5157;
   --light-text: #ffffff;
 
-  --white-blue: #dce5ec;
-  --light-blue: #bfd3df;
-  --mid-blue: #5187a0;
+  --white-blue: #dcece3;
+  --light-blue: #bfdfd3;
+  --mid-blue: #519da0;
   --black-blue: #31343b;
 
-  --btn-blue: #4d788b;
+  --btn-blue: #4d8b7e;
 
   --card-teal: #00b5ad;
 }
@@ -49,6 +49,15 @@ body {
 
 .disappear {
   display: none;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
 }
 
 .scrollbar-primary::-webkit-scrollbar {
